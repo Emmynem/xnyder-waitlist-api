@@ -434,11 +434,9 @@ export const validate_payment_method = (obj) => {
 export const validate_gateway = (obj) => {
 	const method = obj;
 	if (
-		// method !== gateways.paystack && 
-		// method !== gateways.squad && 
-		// method !== gateways.internal && 
-		method !== gateways.coinbase && 
-		method !== gateways.paypal
+		method !== gateways.paystack && 
+		method !== gateways.squad && 
+		method !== gateways.internal
 	) return false;
 	return true;
 };
